@@ -4,7 +4,7 @@ def latest_running():
     from datetime import time
     def latest_create(news_list):
         title='Latest News & Updates'
-        title_img='my_html/images/banners/latest.jpg'
+        title_img='docs/images/banners/latest.jpg'
         pg_1=f"""<!DOCTYPE HTML>
         <html>
             <head>
@@ -68,7 +68,7 @@ def latest_running():
             </body>
         </html>"""
         print("pages updated")
-        with open("my_html/latest.html","w") as file:
+        with open("docs/latest.html","w") as file:
             file.write(pg_1+pg_2+pg_3)
     lst=[]
     while True:

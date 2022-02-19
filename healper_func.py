@@ -75,7 +75,7 @@ def lander_pg(title,tagline,title_img,article_lst,filename):
 
         </body>
     </html>"""
-    with open('my_html/'+filename,'w',encoding="utf8") as file:
+    with open('docs/'+filename,'w',encoding="utf8") as file:
         file.write(land_1+land_2+land_3)
 
 def index_create():
@@ -199,7 +199,7 @@ def index_create():
             </body>
         </html>
     """
-    with open('my_html/index.html','w') as file:
+    with open('docs/index.html','w') as file:
         file.write(index)
         print('Index written Sucessfully!')
 
