@@ -185,7 +185,7 @@ def index_create():
                                             <p>Make Or Shape As With An Axe<br>
                                             Strike With An Axe; Cut Down, Strike<br></p>
                                             <ul class="actions">
-                                                <li><a href="lastest.html" class="button next">Get Started</a></li>
+                                                <li><a href="latest.html" class="button next">Get Started</a></li>
                                             </ul>
                                         </div></section></div></div><!-- Scripts -->
                     <script src="assets/js/jquery.min.js"></script>
