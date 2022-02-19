@@ -1,7 +1,7 @@
 def latest_running():
     from healper_func import article_object
     from scrappers import latest
-    from datetime import time
+    import time
     def latest_create(news_list):
         title='Latest News & Updates'
         title_img='docs/images/banners/latest.jpg'
@@ -79,5 +79,6 @@ def latest_running():
             #send reversed list
             latest_create(lst[::-1])
         time.sleep(100)
-        if len(lst)>50:
-            lst=lst[25:]
+        if len(lst)>20:
+            break
+latest_running()
