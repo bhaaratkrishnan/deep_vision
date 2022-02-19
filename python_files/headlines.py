@@ -1,8 +1,4 @@
 
-
-from unittest import result
-
-
 def headlines_gnews():
     from pygooglenews import GoogleNews
     gn=GoogleNews(country='IN')
