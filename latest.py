@@ -68,7 +68,7 @@ def latest_running():
             </body>
         </html>"""
         print("pages updated")
-        with open("docs/latest.html","w") as file:
+        with open("docs/latest.html","w",encoding='utf8') as file:
             file.write(pg_1+pg_2+pg_3)
     lst=[]
     while True:
@@ -79,6 +79,6 @@ def latest_running():
             #send reversed list
             latest_create(lst[::-1])
         time.sleep(100)
-        if len(lst)>20:
+        if len(lst)>5:
             break
 latest_running()
