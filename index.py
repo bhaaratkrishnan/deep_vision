@@ -29,7 +29,7 @@ def create_pg():
     "docs/images/banners/tech.jpg",
     tech(),
     'tech.html'],
-    ["Health",
+    ["Health & Science",
     "GIVE A MAN HEALTH AND A COURSE TO STEER, AND HE�LL NEVER STOP TO TROUBLE ABOUT WHETHER HE�S HAPPY OR NOT.",
     "docs/images/banners/med.jpg",
     health_gnews(),
