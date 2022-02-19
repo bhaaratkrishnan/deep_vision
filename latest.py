@@ -78,7 +78,7 @@ def latest_running():
             lst.append(news)
             #send reversed list
             latest_create(lst[::-1])
-        time.sleep(100)
-        if len(lst)>5:
+        time.sleep(60)
+        if len(lst)==5:
             break
 latest_running()
