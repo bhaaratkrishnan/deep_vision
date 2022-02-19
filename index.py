@@ -1,5 +1,4 @@
 from healper_func import lander_pg
-from latest import latest_running
 from scrappers import world_gnews
 
 
@@ -44,7 +43,6 @@ def create_pg():
         filename=i[4])
 
 create_pg()
-
 
 
 

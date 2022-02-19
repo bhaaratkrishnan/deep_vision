@@ -41,6 +41,8 @@ def lander_pg(title,tagline,title_img,article_lst,filename):
     land_2=""
     for j in article_lst:
         i=article_object(j)
+        art_title=i.title.split()
+        art_title=" ".join(art_title[:11])+"<br>"+" ".join(art_title[11:])
         land_2_sec=f"""<section><a href={i.url} class="image">
 
                                             <img src={i.top_image} height="515"
@@ -49,7 +51,7 @@ def lander_pg(title,tagline,title_img,article_lst,filename):
                                         <div class="content">
                                             <div class="inner">
                                                 <header class="major">
-                                                    <h3>{i.title}</h3>
+                                                    <h3>{art_title}</h3>
                                                 </header>
                                                 <p>{i.summary}</p>
                                                 <ul class="actions">
@@ -77,6 +79,7 @@ def lander_pg(title,tagline,title_img,article_lst,filename):
     </html>"""
     with open('docs/'+filename,'w',encoding="utf8") as file:
         file.write(land_1+land_2+land_3)
+        print(f"{filename} written...")
 
 def index_create():
     from datetime import date

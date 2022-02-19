@@ -50,7 +50,7 @@ def tech():
         print('Momentum Over')
         return ("https://www.reuters.com"+tech.a['href'])
     links_lst.append(momentum())
-    print('Momentum appended')
+    
     def disrupted():
         r=requests.get("https://www.reuters.com/technology/disrupted/").text
         results=BeautifulSoup(r,'html.parser')
@@ -58,7 +58,7 @@ def tech():
         print('Disrupted Over')
         return ("https://www.reuters.com"+tech.a['href'])
     links_lst.append(disrupted())
-    print('Disrupted Appened')
+    
     def charged():
         r=requests.get("https://www.reuters.com/business/charged/").text
         results=BeautifulSoup(r,'html.parser')
@@ -66,7 +66,7 @@ def tech():
         print('Charged Over')
         return ("https://www.reuters.com"+tech.a['href'])
     links_lst.append(charged())
-    print('Charged Appened')
+    print('Tech Scrapped')
     return links_lst
 def latest():
     import requests
